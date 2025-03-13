@@ -90,7 +90,7 @@ LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english 
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "modijiurl.com")
-SHORTLINK_API = environ.get("SHORTLINK_API", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "04d39f6f93164655a957b4ffd397defff9183148")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
@@ -113,8 +113,8 @@ SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 
-PAYMENT_QR = environ.get('PAYMENT_QR', '') #telegraph link of your QR code 
-UPI_ID = environ.get('UPI_ID', '') # Add your upi id here
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/bNP.jpg') #telegraph link of your QR code 
+UPI_ID = environ.get('UPI_ID', 'mr.yogiraaj@ibl') # Add your upi id here
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002150303936") #if is_stream = true then add a channel id ex: -10026393639
@@ -123,7 +123,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "") #if heroku then paste the app link here ex: https://heroku......./
+URL = environ.get("URL", "https://brief-koral-mzbotz-3207bd28.koyeb.app/") #if heroku then paste the app link here ex: https://heroku......./
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
