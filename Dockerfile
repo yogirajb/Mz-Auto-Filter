@@ -1,8 +1,8 @@
 FROM python:3.11
 
-WORKDIR /Auto-Filter-Bot
+WORKDIR /Mz-Auto-Filter
 
-COPY . /Auto-Filter-Bot
+COPY . /Mz-Auto-Filter
 
 RUN pip install -r requirements.txt
 
