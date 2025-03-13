@@ -60,7 +60,7 @@ else:
 IS_FSUB = is_enabled('IS_FSUB', True)
 
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '') #support group id ex:  -1002936246860
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002387745957') #support group id ex:  -1002936246860
 if len(SUPPORT_GROUP) == 0:
     print('Error - SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -76,11 +76,11 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "mzfilestore")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mzfilestore01')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Rkbotzsupport')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Rkbotz')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/RkMovie_group')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Rkbotz")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Rkbotz")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/MzBotzSupport')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+Gw1YhDuUdNU1Mjll')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/+Wvp5utJI42UzZmI5')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/how_to_open_modijilink/2")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/how_to_open_modijilink/2")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds 
