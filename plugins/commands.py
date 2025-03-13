@@ -98,7 +98,7 @@ async def start(client, message):
                 InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
-        await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
+        await message.reply(f"✅ You are successfully verified ! Now you have unlimited VIP ✨ access all movies till today midnight.\n\nNow go back to your group and search again get your movies in files ✅ 💞: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
         return
     
     verify_status = await get_verify_status(message.from_user.id)
@@ -112,7 +112,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
             ]]
-            await message.reply("You not verified today! Kindly verify now. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
+            await message.reply("You not verified today! Please verify and get unlimited (VIP) Access For Next 24 Hours.💖\n\nइस बोट का इस्तेमाल करने के लिये आपको VERIFY करना होगा. नही तो आप इसका इस्तेमाल नहीं कर पायेंगे | Verify करने के बाद 24 घंटे के लिये आप इस बोट का इस्तेमाल कर सकते हैं. 🔐", reply_markup=InlineKeyboardMarkup(btn), protect_content=True)
             return
     else:
         pass
